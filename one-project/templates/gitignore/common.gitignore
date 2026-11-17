@@ -1,0 +1,7 @@
+# ===== 通用：交付物不入库（当前版本放 release/，历史版本在工程外的发布库）=====
+release/
+Thumbs.db
+desktop.ini
+.DS_Store
+*~
+# 过程目录（evidence/、tmp/、.artifacts/ 等）不要加进来：保持可见，让 one-project 扫描器发现

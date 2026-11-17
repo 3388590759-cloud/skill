@@ -1,0 +1,12 @@
+## 工程卫生（one-project）
+- Skill：{{skill目录}}\SKILL.md（整理/清理/体检工程、整理目录、整理文档、新建工程、接入版本规范、发布版本时使用）。
+- 本机路径：工作区根 = {{工作区根，多个用「、」分隔}}；发布库 = {{发布库}}；参考库 = {{参考库}}。
+- 目录布局按 layout v1（词表见 one-project 的 references/目录布局.md）：新建工程走 one-project 新建模式；VERSION 声明了 layout = 1 的工程，不得在根目录新增脚本或散放文档、不得新增词表外顶层目录（firmware/ host/ server/ web/ app/ deploy/ contracts/ tools/ tests/ docs/ release/），固件自写代码放 User/App·BSP·ThirdParty。
+- 一个工程目录只放一套当前工程；历史版本靠 git 分支/tag 管理。禁止复制工程目录，禁止在工程内保留旧版本副本。
+- 未经我明确要求不得创建 worktree；我要求创建的，任务结束后合回并删除。
+- 一次性过程文件（调试脚本、日志、截图、验证证据、回执、中间报告）一律写到会话 scratchpad，不得在工程内新建 .artifacts/、evidence/、tmp/ 等目录。值得保留的结论写进 docs/方案 或 docs/问题记录，同主题原地更新，不新建 -v2/-final/-续 副本。
+- 分支只允许 main、protocol/vX.Y、protocol/vX.Y-变体；不新建任务分支，直接在当前分支提交。
+- 提交信息用中文「类型: 描述」，类型限 新增/修复/优化/重构/文档/测试/构建/清理/发布。
+- 版本号以工程根目录 VERSION 为准（硬件.协议.固件，协议段 = 主×100+次）；交付物文件名带版本号；打 tag 后版本冻结。
+- {{轻检范围}} 下 git 工程的开发任务结束前，运行轻检：{{python}} -X utf8 "{{skill目录}}\scripts\scan.py" "<工程路径>" --quick；有问题只提示，不自动删除。
+- 根目录 VERSION 写了 type = docs 的文档/素材型工程（不限上述范围，不用 git）：新文档放 docs/<十类>/、素材放 assets/<参考|原图|定稿>/，移出的文件只进回收站；在其中改动文件的任务结束前同样跑上面的 --quick 轻检，有问题只提示。

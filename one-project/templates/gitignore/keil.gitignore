@@ -1,0 +1,19 @@
+# ===== Keil MDK：编译中间产物（可由 .uvprojx 重新构建；保留 .sct）=====
+# 另把扫描报告里的保护路径逐条加入，如 firmware/<板目录>/MDK-ARM/<Target>/
+*.o
+*.d
+*.crf
+*.lst
+*.map
+*.axf
+*.htm
+*.lnp
+*.dep
+*.iex
+*.scvd
+*.dbgconf
+# Keil 用户级 GUI/会话状态（与构建无关，因人而异）
+*.uvguix.*
+*.uvgui.*
+JLinkLog.txt
+DebugConfig/

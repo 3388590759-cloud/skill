@@ -1,0 +1,16 @@
+# host — {{上位机名称}}
+
+{{一句话：功能、对接的设备与协议}}
+
+## 运行
+
+- 双击 `run_gui.bat`（自检 Python / tkinter / pyserial 后无窗口启动），或 `python {{入口}}.py`
+- 依赖：`pip install -r requirements.txt`
+
+## 打包（.exe）
+
+双击 `pack_exe.bat`：PyInstaller 单文件、无控制台窗口，输出 `host\dist\{{名称}}.exe`（`host\build\` 为中间产物，可整体删除）。发布时按 `VERSION` 复制为 `release\{{型号}}-GUI_V<版本>.exe`。
+
+## 测试
+
+{{自测 / 冒烟命令，如 python {{入口}}.py --smoke}}

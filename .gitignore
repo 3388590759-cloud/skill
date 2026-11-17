@@ -1,0 +1,11 @@
+# 打包产物：安装包只发 GitHub Releases，不入库
+dist/
+*.skill
+
+# Python
+__pycache__/
+*.pyc
+
+# 本机私有文件，不公开
+one-project/设计方案.md
+one-project/references/存量迁移.md

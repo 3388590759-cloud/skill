@@ -1,0 +1,11 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+# PyInstaller：打包命令的单一来源是 host/pack_exe.bat，spec 与中间产物不入库
+build/
+dist/
+*.spec

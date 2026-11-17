@@ -1,0 +1,6 @@
+# ===== IAR EWARM：编译中间产物 =====
+EWARM/*/Exe/
+EWARM/*/List/
+EWARM/*/Obj/
+EWARM/settings/
+*.dep
