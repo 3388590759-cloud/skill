@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-labelledby="title desc">
+  <title id="title">one-project</title>
+  <desc id="desc">一个目录，一套工程；历史交给 git。One directory, one project. History lives in git.</desc>
+  <style>
+    .bg { fill: #f6f8fa; stroke: #d1d9e0; }
+    .t { fill: #1f2328; }
+    .m { fill: #59636e; }
+    .a { fill: #0e7a6d; }
+    .pill { fill: #dff3ef; }
+    .ln { stroke: #9aa5b1; fill: none; }
+    .sans { font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", "Noto Sans SC", "Hiragino Sans GB", system-ui, sans-serif; }
+    .mono { font-family: "Cascadia Mono", Consolas, "SFMono-Regular", Menlo, "DejaVu Sans Mono", monospace; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #151b23; stroke: #3d444d; }
+      .t { fill: #f0f6fc; }
+      .m { fill: #9198a1; }
+      .a { fill: #3fd1b8; }
+      .pill { fill: #12332e; }
+      .ln { stroke: #4d5761; }
+    }
+  </style>
+
+  <rect class="bg" x="1" y="1" width="1198" height="318" rx="16" stroke-width="2"/>
+
+  <!-- 左：名称与标语 -->
+  <rect class="pill" x="64" y="60" width="176" height="34" rx="17"/>
+  <text class="a sans" x="152" y="83" font-size="17" font-weight="600" text-anchor="middle">Claude Code Skill</text>
+  <text class="t sans" x="62" y="170" font-size="68" font-weight="700" letter-spacing="-1">one-project</text>
+  <text class="t sans" x="64" y="220" font-size="28">一个目录，一套工程；历史交给 git</text>
+  <text class="m sans" x="64" y="258" font-size="18">One directory, one project. History lives in git.</text>
+
+  <!-- 右：整理后的目录树 -->
+  <g class="mono" font-size="22">
+    <text class="t" x="820" y="96">my-project/</text>
+    <path class="ln" d="M832 108 V 246 M832 134 H 852 M832 174 H 852 M832 214 H 852 M832 246 H 852" stroke-width="2" stroke-linecap="round"/>
+    <text class="a" x="862" y="142" font-weight="600">firmware/</text>
+    <text class="a" x="862" y="182" font-weight="600">host/</text>
+    <text class="a" x="862" y="222" font-weight="600">docs/</text>
+    <text class="t" x="862" y="254">VERSION</text>
+  </g>
+</svg>
